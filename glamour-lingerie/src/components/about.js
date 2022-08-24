@@ -1,8 +1,11 @@
-const about = () => {
+import React from 'react'
+
+
+const About = () => {
     return(
         <div>
-            <h1>View about</h1>
+            <h1 className='About'>View about</h1>
         </div>
     )
 }
-export default about
+export default About

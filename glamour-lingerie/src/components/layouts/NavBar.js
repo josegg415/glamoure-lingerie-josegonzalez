@@ -1,4 +1,4 @@
-
+import React from 'react'
 import { Navbar, Nav, Container } from "react-bootstrap"
 import { Outlet, Link } from "react-router-dom"
 
@@ -11,9 +11,9 @@ const NavBarExample = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/home' >Home</Nav.Link>
-            <Nav.Link  as={Link} to='/about'>about</Nav.Link>
-            <Nav.Link  as={Link} to='/contacto' >contacto</Nav.Link>
+            <Nav.Link as={Link} to='/Home' >Home</Nav.Link>
+            <Nav.Link  as={Link} to='/About'>about</Nav.Link>
+            <Nav.Link  as={Link} to='/Contacto' >contacto</Nav.Link>
             
           </Nav>
         </Navbar.Collapse>
@@ -27,3 +27,5 @@ const NavBarExample = () => {
     )
 }
 export default NavBarExample
+
+
