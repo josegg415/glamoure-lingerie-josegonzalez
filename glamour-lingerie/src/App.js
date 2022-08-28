@@ -1,38 +1,17 @@
-
-import './App.css';
-import {BrowserRouter,Navigate, Routes, Route} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-
-// importacion de los documentos creados 
-import NavBarExample from './components/layouts/NavBar.js';
-import ItemListContainer from './components/ItemListContainer.js';
-import Home from './components/Home.js';
-import About from './components/About.js';
-import Contacto from './components/contacto/Contacto.js';
-import CartWidget from './components/contenedor/CartWidget.js'
+import './App.css';
+import NavBar from './componentes/NavBar.js';
+import ItemCount from './componentes/ItemCount.js';
 
 
-function App() {
+function App () {
   return (
     <div className="App">
-     <BrowserRouter>
-     <Routes>
-      <Route path='/' element={ <NavBarExample/> } />
-      <Route path='ItemListContainer' element={ <ItemListContainer/> } />
-      <Route path='./CartWidget' element={ <CartWidget/> } />
-      <Route index element={ <Home />} />
-      <Route path='About' element={<About />} />
-      <Route path='Contacto' element={ <Contacto /> } />
-
-        <Route path='*' element={<Navigate replace to='/' />} />
-
-
-      
-     </Routes>
-     </BrowserRouter>
-      
-
+      <NavBar/>
+     <ItemCount/>
+     <ItemCount/>
+     <ItemCount/>
+  
     </div>
   );
 }
