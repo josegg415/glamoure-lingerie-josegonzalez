@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from "react-router-dom"
 import CartWidget from './cartWidget/CartWidget.js';
 import '../hojas-de-estilos/NavBar.css';
 
@@ -11,14 +12,15 @@ function ColorSchemesExample() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <img src={require('../img/logo/glamoure.jpeg')} alt='foto de la Marca' className='Marca' />
+          <img src={require('../img/logo/glamoure.jpeg')} alt='foto-de-la-marca' className='Marca' />
 
-          <Navbar.Brand href="#home" className='mx-2'>  Glamour Lingerie</Navbar.Brand>
+          <NavLink to="/" className='mx-2'>  Glamour Lingerie</NavLink>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Tienda</Nav.Link>
-            <Nav.Link href="#features">lo mas Vendido</Nav.Link>
-            <Nav.Link href="#pricing">Precios  </Nav.Link>
-            <Nav.Link href="#pricing"> < CartWidget /></Nav.Link>
+            <NavLink to="/" >Tienda</NavLink>
+            <NavLink to="/data/vendido">lo mas Vendido</NavLink>
+            <NavLink to="/data/mujer"> Mujer  </NavLink>
+            <NavLink to="/data/hombre"> Hombre  </NavLink>
+            <NavLink to="/data/cart"> < CartWidget /></ NavLink>
 
           </Nav>
         </Container>

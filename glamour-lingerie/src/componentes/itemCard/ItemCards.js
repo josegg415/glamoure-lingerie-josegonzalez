@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, CardBody, CardFooter, CardHeader, CardText, CardTitle } from "reactstrap";
+import { Card, CardBody, CardFooter,  CardText, CardTitle } from "reactstrap";
 import ItemCount from "../itemCount/ItemCount";
 
 
@@ -18,10 +18,10 @@ const ItemCard = (props) => {
                 className="my-2"
                 style={{
                     width: '18rem',
-                    
+    
                 }}
             >
-                <img src={imgURL} />
+                <img src={imgURL} alt='imagen' />
                 <CardBody>
                     <CardTitle tag="h5">
                         {nombre.id}
@@ -36,6 +36,7 @@ const ItemCard = (props) => {
                         {stock}
                     </CardText>
                     <ItemCount stock={stock}/>
+            <button className='btn  btn-primary' style={{ width: "100%", marginTop: "1rem" }}> Ver Mas </button>
                 </CardBody>
                 <CardFooter>
                     Stock {stock}

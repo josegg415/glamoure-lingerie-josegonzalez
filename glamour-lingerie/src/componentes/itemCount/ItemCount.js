@@ -32,8 +32,7 @@ const ItemCount = ({stock}) => {
             <button onClick={handleRestar} className='btn  btn-outline-primary' >-</button>
             <span className='mx-2'>{contador}</span>
             <button onClick={handleSumar} className='btn  btn-primary' >+</button>
-            {/* <button style={{width: "100%", margintop:"1rem"}} disabled={stock <= 0}>añadir al carrito </button> */}
-         <button className='btn  btn-primary' style={{width: "100%", marginTop:"1rem"}}> Añadir al carrito </button>
+        
 
         </div>
     )
