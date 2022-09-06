@@ -18,7 +18,7 @@ const ItemListcontainer = () => {
                 if(!categoryId){
                  setData(res)
                 } else {
-                    setData(res.filter((produc) => produc.category === categoryId))
+                    setData(res.filter((data) => data.category === categoryId))
                 }
 
              })

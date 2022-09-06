@@ -4,8 +4,8 @@ const ItemDetail = ( {item}) => {
 
     return(
         <div className="container">
-            <img src={item.imgURL}/>
-            <h3>{item.nombre}</h3>
+            <img src={item.img}/>
+            <h1>{item.nombre}</h1>
             <p>{item.tipo}</p>
             <p>{item.talle}</p>
             <p>{item.category}</p>
@@ -15,4 +15,4 @@ const ItemDetail = ( {item}) => {
         </div>
     )
 }
-export default ItemDetail;
+ export default ItemDetail;

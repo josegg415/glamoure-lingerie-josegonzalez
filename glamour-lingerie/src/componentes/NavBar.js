@@ -17,10 +17,11 @@ function ColorSchemesExample() {
           <NavLink to="/" className='mx-2'>  Glamour Lingerie</NavLink>
           <Nav className="me-auto">
             <NavLink to="/" >Tienda</NavLink>
-            <NavLink to="/data/vendido">lo mas Vendido</NavLink>
-            <NavLink to="/data/mujer"> Mujer  </NavLink>
-            <NavLink to="/data/hombre"> Hombre  </NavLink>
-            <NavLink to="/data/cart"> < CartWidget /></ NavLink>
+            <NavLink to="./data/lomasvendido">lo mas Vendido</NavLink>
+            <NavLink to="./data/mujer"> Mujer  </NavLink>
+            {/* esta es la manera correcta pero no me toma la imagen  */}
+            <NavLink to="./data/hombre"> Hombre  </NavLink>
+            <NavLink to="./data/cart"> < CartWidget /></ NavLink>
 
           </Nav>
         </Container>

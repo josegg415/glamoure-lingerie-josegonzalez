@@ -13,7 +13,7 @@
         talle: "L",
         stock: 5,
         imgURL: "./imagenes/batas/bata-beige.jpeg",
-        categoryId: " lo mas vendido"
+        category: "lomasvendido"
     },
     {
         id: 2,
@@ -23,7 +23,7 @@
         talle: "xs",
         stock: 9,
         imgURL: "./imagenes/batas/bata-beige.jpeg",
-        category: "lo mas vendido"
+        category: "lomasvendido"
     },
     {
 
