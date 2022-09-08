@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getData } from "../../helpers/getData";
+import { getData } from "../../helpers/getData.js";
+import ItemDetail from "../ItemDetail/ItemDetail.js";
 
 
 const ItemDetailContainer = () => {
 
-    const [item, setItem] = useState(null)
+    const [item, setItem] = useState([])
     const [loading, setloading] = useState(true)
 
 
@@ -25,7 +26,7 @@ const ItemDetailContainer = () => {
         })
       
 
-    }, [])
+    }, [itemId])
 
     return (
         <div>

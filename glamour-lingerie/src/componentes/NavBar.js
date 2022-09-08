@@ -11,17 +11,16 @@ function ColorSchemesExample() {
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Container>
+        <Container >
           <img src={require('../img/logo/glamoure.jpeg')} alt='foto-de-la-marca' className='Marca' />
 
           <NavLink to="/" className='mx-2'>  Glamour Lingerie</NavLink>
           <Nav className="me-auto">
-            <NavLink to="/" >Tienda</NavLink>
-            <NavLink to="./data/lomasvendido">lo mas Vendido</NavLink>
-            <NavLink to="./data/mujer"> Mujer  </NavLink>
-            {/* esta es la manera correcta pero no me toma la imagen  */}
-            <NavLink to="./data/hombre"> Hombre  </NavLink>
-            <NavLink to="./data/cart"> < CartWidget /></ NavLink>
+            <NavLink size='2rem' color='blue'  className='mx-4' to="/" >Tienda</NavLink>
+            <NavLink size='2rem' color='blue'  className='mx-4' to="/data/lomasvendido">lo mas Vendido</NavLink>
+            <NavLink size='2rem' color='blue'  className='mx-4' to="/data/mujer"> Mujer  </NavLink>
+            <NavLink size='2rem' color='blue'  className='mx-4' to="/data/hombre"> Hombre  </NavLink>
+            <NavLink to="/data/cart"> < CartWidget /></ NavLink>
 
           </Nav>
         </Container>

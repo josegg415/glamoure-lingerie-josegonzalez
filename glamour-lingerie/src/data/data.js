@@ -12,7 +12,7 @@
         precio: 500,
         talle: "L",
         stock: 5,
-        imgURL: "./imagenes/batas/bata-beige.jpeg",
+        imgURL: "/imagenes/batas/bata-beige.jpeg",
         category: "lomasvendido"
     },
     {
@@ -22,7 +22,7 @@
         precio: 300,
         talle: "xs",
         stock: 9,
-        imgURL: "./imagenes/batas/bata-beige.jpeg",
+        imgURL: "/imagenes/batas/bata-beige.jpeg",
         category: "lomasvendido"
     },
     {
@@ -33,7 +33,7 @@
         precio: 100,
         talle: "M",
         stock: 8,
-        imgURL: "./imagenes/pantuflas/pantufla-gris.jpeg",
+        imgURL: "/imagenes/pantuflas/pantufla-gris.jpeg",
         category: "mujer"
     },
     {
@@ -44,7 +44,7 @@
         precio: 500,
         talle: "M",
         stock: 10,
-        imgURL: "./imagenes/pantuflas/pantufla-gris.jpeg",
+        imgURL: "/imagenes/pantuflas/pantufla-gris.jpeg",
         category: "mujer"
     },
     {
@@ -55,7 +55,7 @@
         precio: 1000,
         talle: "XL",
         stock: 4,
-        imgURL: "./imagenes/pijamas/only-face.jpeg",
+        imgURL: "/imagenes/pijamas/only-face.jpeg",
         category: "hombre"
     },
     {
@@ -65,7 +65,7 @@
         precio: 1500,
         talle: "XXL",
         stock: 7,
-        imgURL: "./imagenes/hombre/interior.jpeg",
+        imgURL: "/imagenes/hombre/interior.jpeg",
         category: "hombre"
     },
 ]

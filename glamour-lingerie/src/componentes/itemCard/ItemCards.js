@@ -1,14 +1,21 @@
 import React from "react";
-import { Card, CardBody, CardFooter,  CardText, CardTitle } from "reactstrap";
-import ItemCount from "../itemCount/ItemCount";
+import { Card, CardBody, CardFooter,  CardText, CardTitle, Button } from "reactstrap";
+// import {useNavigate} from "react-router-dom";
+import { Link } from "react-router-dom"
+// import Item from "../Item/Item";
+// import {Link} from "react-router-dom";
+// import ItemCount from "../itemCount/ItemCount";
+
+ 
 
 
 
 
 
 const ItemCard = (props) => {
-    const { nombre, tipo, precio, talle, stock, imgURL } = props;
+    const { nombre, tipo, precio, talle, stock, imgURL, id } = props;
 
+  
 
 
 
@@ -35,8 +42,11 @@ const ItemCard = (props) => {
                     <CardText>
                         {stock}
                     </CardText>
-                    <ItemCount stock={stock}/>
-            <button className='btn  btn-primary' style={{ width: "100%", marginTop: "1rem" }}> Ver Mas </button>
+                  
+                     {/* <ItemCount stock={stock}/> */}
+                     
+            <Link to={`/detail/${id}`}><Button className='btn  btn-primary' style={{ width: "100%", marginTop: "1rem" }}> Ver Mas</Button> </Link>
+                    
                 </CardBody>
                 <CardFooter>
                     Stock {stock}
