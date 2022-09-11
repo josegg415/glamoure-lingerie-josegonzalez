@@ -8,7 +8,7 @@ import NavBar from './componentes/NavBar.js';
 
 
 function App() {
-  return (
+  return ( 
     <div className="App">
 
 
@@ -19,7 +19,7 @@ function App() {
         <Routes>
             <Route  path='/' element={<ItemListContainer />} />
             <Route  path='/data/:categoryId' element={ <ItemListContainer /> } />
-            <Route  path='/detail/:ItemId' element={ <ItemDetailContainer/> } />
+            <Route  path='/detail/:itemId' element={ <ItemDetailContainer/> } />
             <Route  path='*' element={ <Navigate to=""/>} />
         </Routes>
 

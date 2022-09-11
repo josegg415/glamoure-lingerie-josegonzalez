@@ -1,17 +1,11 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 
-const ItemCount = ({stock}) => {
-
-
-
-    const [contador, setContador] = useState(0)
-
-
+const ItemCount = ({max, contador,setContador, handleAgregar }) => {
 
     const handleSumar = () => {
-        if (contador < stock) {
+        if (contador < max) {
 
             setContador(contador + 1)
         }
@@ -32,11 +26,16 @@ const ItemCount = ({stock}) => {
             <button onClick={handleRestar} className='btn  btn-outline-primary' >-</button>
             <span className='mx-2'>{contador}</span>
             <button onClick={handleSumar} className='btn  btn-primary' >+</button>
-        
+            <hr/>
+
+           <button onClick={handleAgregar} className='btn btn-success my-2'>
+                Agregar al carrito
+            </button>
+         
 
         </div>
     )
 }
 
-export default ItemCount
+export default ItemCount;
 

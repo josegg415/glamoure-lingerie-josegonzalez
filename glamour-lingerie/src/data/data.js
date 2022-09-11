@@ -3,7 +3,7 @@
 
 
 
- export let stockProductos = [
+export let stockProductos = [
     {
 
         id: 1,
@@ -13,7 +13,38 @@
         talle: "L",
         stock: 5,
         imgURL: "/imagenes/batas/bata-beige.jpeg",
-        category: "lomasvendido"
+        category: "lomasvendido",
+        colores: [
+            {
+            value: 'Gris',
+            text: 'Gris',
+        },
+        {
+            value: 'Negro',
+            text: 'Negro',
+        },
+        {
+            value: 'Blanco',
+            text: 'Blanco',
+        },
+    ],
+        options: [
+            {
+                value: 'L',
+                text: 'Large',
+
+            },
+            {
+                value: 'M',
+                text: 'Medium',
+
+            },
+            {
+                value: 'xs',
+                text: 'Small',
+
+            },
+        ]
     },
     {
         id: 2,
@@ -23,7 +54,35 @@
         talle: "xs",
         stock: 9,
         imgURL: "/imagenes/batas/bata-beige.jpeg",
-        category: "lomasvendido"
+        category: "lomasvendido",
+        colores: [
+            {
+            value: 'Gris',
+            text: 'Gris',
+        },
+        {
+            value: 'Negro',
+            text: 'Negro',
+        },
+        {
+            value: 'Blanco',
+            text: 'Blanco',
+        },
+    ],
+
+        options: [
+            {
+                value: 'L',
+                text: 'Large',
+
+            },
+            {
+                value: 'M',
+                text: 'Medium',
+
+            },
+          
+        ]
     },
     {
 
@@ -34,7 +93,38 @@
         talle: "M",
         stock: 8,
         imgURL: "/imagenes/pantuflas/pantufla-gris.jpeg",
-        category: "mujer"
+        category: "mujer",
+        colores: [
+            {
+            value: 'Gris',
+            text: 'Gris',
+        },
+        {
+            value: 'Negro',
+            text: 'Negro',
+        },
+        {
+            value: 'Blanco',
+            text: 'Blanco',
+        },
+    ],
+        options: [
+            {
+                value: 'L',
+                text: 'Large',
+
+            },
+            {
+                value: 'M',
+                text: 'Medium',
+
+            },
+            {
+                value: 'S',
+                text: 'Small',
+
+            },
+        ]
     },
     {
 
@@ -45,7 +135,38 @@
         talle: "M",
         stock: 10,
         imgURL: "/imagenes/pantuflas/pantufla-gris.jpeg",
-        category: "mujer"
+        category: "mujer",
+        colores: [
+            {
+            value: 'Gris',
+            text: 'Gris',
+        },
+        {
+            value: 'Negro',
+            text: 'Negro',
+        },
+        {
+            value: 'Blanco',
+            text: 'Blanco',
+        },
+    ],
+        options: [
+            {
+                value: 'L',
+                text: 'Large',
+
+            },
+            {
+                value: 'M',
+                text: 'Medium',
+
+            },
+            {
+                value: 'S',
+                text: 'Small',
+
+            },
+        ]
     },
     {
 
@@ -56,7 +177,38 @@
         talle: "XL",
         stock: 4,
         imgURL: "/imagenes/pijamas/only-face.jpeg",
-        category: "hombre"
+        category: "hombre",
+        colores: [
+            {
+            value: 'Gris',
+            text: 'Gris',
+        },
+        {
+            value: 'Negro',
+            text: 'Negro',
+        },
+        {
+            value: 'Blanco',
+            text: 'Blanco',
+        },
+    ],
+        options: [
+            {
+                value: 'L',
+                text: 'Large',
+
+            },
+            {
+                value: 'M',
+                text: 'Medium',
+
+            },
+            {
+                value: 'S',
+                text: 'Small',
+
+            },
+        ]
     },
     {
         id: 6,
@@ -66,6 +218,38 @@
         talle: "XXL",
         stock: 7,
         imgURL: "/imagenes/hombre/interior.jpeg",
-        category: "hombre"
+        category: "hombre",
+        colores: [
+            {
+            value: 'Gris',
+            text: 'Gris',
+        },
+        {
+            value: 'Negro',
+            text: 'Negro',
+        },
+        {
+            value: 'Blanco',
+            text: 'Blanco',
+        },
+    ],
+        options: [
+            {
+                value: 'L',
+                text: 'Large',
+
+            },
+            {
+                value: 'M',
+                text: 'Medium',
+
+            },
+            {
+                value: 'S',
+                text: 'Small',
+
+            },
+        ]
+
     },
 ]
