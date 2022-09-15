@@ -134,7 +134,7 @@ export let stockProductos = [
         precio: 500,
         talle: "M",
         stock: 10,
-        imgURL: "/imagenes/pantuflas/pantufla-gris.jpeg",
+        imgURL: "/imagenes/mujer/bombacha-clasic-beige.jpeg",
         category: "mujer",
         colores: [
             {
@@ -142,8 +142,8 @@ export let stockProductos = [
             text: 'Gris',
         },
         {
-            value: 'Negro',
-            text: 'Negro',
+            value: 'Beige',
+            text: 'Beige',
         },
         {
             value: 'Blanco',
@@ -184,8 +184,8 @@ export let stockProductos = [
             text: 'Gris',
         },
         {
-            value: 'Negro',
-            text: 'Negro',
+            value: 'rosa',
+            text: 'Rosa',
         },
         {
             value: 'Blanco',

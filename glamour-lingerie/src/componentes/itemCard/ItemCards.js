@@ -22,7 +22,7 @@ const ItemCard = (props) => {
     return (
         <>
             <Card
-                className="my-2"
+                className="my-2 "
                 style={{
                     width: '18rem',
     

@@ -12,7 +12,7 @@ const ItemCount = ({max, contador,setContador, handleAgregar }) => {
 
     }
     const handleRestar = () => {
-        if (contador > 0) {
+        if (contador > 1) {
             setContador(contador - 1)
         }
 

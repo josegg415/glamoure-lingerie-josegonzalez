@@ -1,5 +1,4 @@
 import React from "react";
-// import { NavLink} from "react-router-dom";
 import ItemCard from "../itemCard/ItemCards";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

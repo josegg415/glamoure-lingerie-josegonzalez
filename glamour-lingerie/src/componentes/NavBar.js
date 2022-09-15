@@ -20,7 +20,9 @@ function ColorSchemesExample() {
             <NavLink size='2rem' color='blue'  className='mx-4' to="/data/lomasvendido">lo mas Vendido</NavLink>
             <NavLink size='2rem' color='blue'  className='mx-4' to="/data/mujer"> Mujer  </NavLink>
             <NavLink size='2rem' color='blue'  className='mx-4' to="/data/hombre"> Hombre  </NavLink>
-            <NavLink to="/data/cart"> < CartWidget /></ NavLink>
+            {/* <NavLink to=" "> < CartWidget /></ NavLink> */}
+            {/* "/data/cart" */}
+            < CartWidget />
 
           </Nav>
         </Container>

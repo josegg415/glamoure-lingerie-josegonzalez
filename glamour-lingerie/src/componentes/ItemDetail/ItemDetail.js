@@ -1,7 +1,9 @@
-import React from "react";
+// import React, { useContext } from "react";
 import ItemCount from "../itemCount/ItemCount";
 import Select from "../Select/Select";
 import { useState } from 'react';
+ import {  useCartContext } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 
 
@@ -10,6 +12,8 @@ import { useState } from 'react';
 
 const ItemDetail = ( {item}) => {
 
+    const {cart,addToCart, isInCart } = useCartContext()
+    console.log(cart)
 
     const [cantidad, setCantidad] = useState(0)
     const [talle, setTalle] = useState(item.options[0].value)
@@ -27,7 +31,9 @@ const ItemDetail = ( {item}) => {
 
 
         }
-        console.log(itemToCart)
+       
+
+        addToCart(itemToCart)
     
 
     }
@@ -47,13 +53,22 @@ const ItemDetail = ( {item}) => {
             <Select options={item.options}  onSelect={setTalle}/>
             <Select options={item.colores}  onSelect={setColores}/>
             <hr/>
-               <ItemCount  max={item.stock}
-               contador={cantidad}
-               setContador={setCantidad}
-               handleAgregar={handleAgregar}/>
+
+            {isInCart(item.id) && <p> El item ya se agrego </p> }
+
+            {
+                 isInCart(item.id)
+                ?   <Link to="/cart" className="btn btn-success my-3"> Finalizar mi compra</Link>
+
+                :   <ItemCount
+                  max={item.stock}
+                   contador={cantidad}
+                  setContador={setCantidad}
+                  handleAgregar={handleAgregar}/>
+            }
                
             
-              
+            
 
 
         </div>
