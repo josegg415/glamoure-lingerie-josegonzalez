@@ -7,13 +7,13 @@ export let stockProductos = [
     {
 
         id: 1,
-        nombre: "Bata",
-        tipo: "Bata",
-        precio: 500,
-        talle: "L",
+        nombre: "Pijama de Rayas",
+        tipo: "Pijamas",
+        precio: 8300,
+        talle: "Un pijmas para Ti",
         stock: 5,
-        imgURL: "/imagenes/batas/bata-beige.jpeg",
-        category: "lomasvendido",
+        imgURL: "/imagenes/hombre/pijama-de-hombre-lohe-raso-rayas.jpg",
+        category: "pijamas",
         colores: [
             {
             value: 'Gris',
@@ -48,10 +48,10 @@ export let stockProductos = [
     },
     {
         id: 2,
-        nombre: "Corpiño",
-        tipo: 'corpiño',
-        precio: 300,
-        talle: "xs",
+        nombre: "Bata Beige",
+        tipo: 'Bata Beige',
+        precio: 5000,
+        talle: "la Bata que estas buscando",
         stock: 9,
         imgURL: "/imagenes/batas/bata-beige.jpeg",
         category: "lomasvendido",
@@ -87,13 +87,13 @@ export let stockProductos = [
     {
 
         id: 3,
-        nombre: "Medias",
-        tipo: "medias",
+        nombre: "Pantuflas",
+        tipo: "Pantuflas",
         precio: 100,
-        talle: "M",
+        talle: "Las mas comodas del mercado",
         stock: 8,
         imgURL: "/imagenes/pantuflas/pantufla-gris.jpeg",
-        category: "mujer",
+        category: "lomasvendido",
         colores: [
             {
             value: 'Gris',
@@ -129,10 +129,10 @@ export let stockProductos = [
     {
 
         id: 4,
-        nombre: "bombacha",
-        tipo: "ropa interior",
+        nombre: "Bombacha",
+        tipo: "Bombacha Beige",
         precio: 500,
-        talle: "M",
+        talle: "Este producto es furor",
         stock: 10,
         imgURL: "/imagenes/mujer/bombacha-clasic-beige.jpeg",
         category: "mujer",
@@ -171,13 +171,13 @@ export let stockProductos = [
     {
 
         id: 5,
-        nombre: "Botxer",
-        tipo: "ropa interior",
-        precio: 1000,
-        talle: "XL",
-        stock: 4,
-        imgURL: "/imagenes/pijamas/only-face.jpeg",
-        category: "hombre",
+        nombre: "Pijama de Rayas",
+        tipo: "Pijama de Rayas",
+        precio: 7000,
+        talle: "El Pijama de tus sueños",
+        stock: 8,
+        imgURL: "/imagenes/hombre/pijama-hombre-azuloscuro.jpg",
+        category: "pijamas",
         colores: [
             {
             value: 'Gris',
@@ -212,10 +212,10 @@ export let stockProductos = [
     },
     {
         id: 6,
-        nombre: "Camison",
-        tipo: "camison",
+        nombre: "Boxers",
+        tipo: "Boxers",
         precio: 1500,
-        talle: "XXL",
+        talle: "El mejor Producto",
         stock: 7,
         imgURL: "/imagenes/hombre/interior.jpeg",
         category: "hombre",
@@ -252,4 +252,213 @@ export let stockProductos = [
         ]
 
     },
+    {
+        id: 7,
+        nombre: "Boxer Azul",
+        tipo: "Boxer Azul",
+        precio: 1500,
+        talle: "El mejor Producto",
+        stock: 10,
+        imgURL: "/imagenes/hombre/botxer azul.jpeg",
+        category: "hombre",
+        colores: [
+            {
+            value: 'Gris',
+            text: 'Gris',
+        },
+        {
+            value: 'Negro',
+            text: 'Negro',
+        },
+        {
+            value: 'Blanco',
+            text: 'Blanco',
+        },
+    ],
+        options: [
+            {
+                value: 'L',
+                text: 'Large',
+
+            },
+            {
+                value: 'M',
+                text: 'Medium',
+
+            },
+            {
+                value: 'S',
+                text: 'Small',
+
+            },
+        ]
+
+    },
+    {
+        id: 8,
+        nombre: "Bata de Novia",
+        tipo: 'Bata De Novia',
+        precio: 5000,
+        talle: "Te acompañamos en momento importantes",
+        stock: 9,
+        imgURL: "/imagenes/batas/bata-de-novia.jpg",
+        category: "lomasvendido",
+        colores: [
+            {
+            value: 'Gris',
+            text: 'Gris',
+        },
+        {
+            value: 'Negro',
+            text: 'Negro',
+        },
+        {
+            value: 'Blanco',
+            text: 'Blanco',
+        },
+    ],
+
+        options: [
+            {
+                value: 'L',
+                text: 'Large',
+
+            },
+            {
+                value: 'M',
+                text: 'Medium',
+
+            },
+          
+        ]
+    },
+    {
+    id: 9,
+    nombre: "Conjunto Azul",
+    tipo: "Conjunto Azul",
+    precio: 500,
+    talle: "Este producto es furor",
+    stock: 10,
+    imgURL: "/imagenes/mujer/conjunto-azul.jpeg",
+    category: "mujer",
+    colores: [
+        {
+        value: 'Gris',
+        text: 'Gris',
+    },
+    {
+        value: 'Beige',
+        text: 'Beige',
+    },
+    {
+        value: 'Blanco',
+        text: 'Blanco',
+    },
+],
+    options: [
+        {
+            value: 'L',
+            text: 'Large',
+
+        },
+        {
+            value: 'M',
+            text: 'Medium',
+
+        },
+        {
+            value: 'S',
+            text: 'Small',
+
+        },
+    ]
+},
+{
+
+    id: 10,
+    nombre: "Only Face",
+    tipo: "Pijama Only Face",
+    precio: 7000,
+    talle: "El Pijama de tus sueños",
+    stock: 4,
+    imgURL: "/imagenes/pijamas/only-face.jpeg",
+    category: "pijamas",
+    colores: [
+        {
+        value: 'Gris',
+        text: 'Gris',
+    },
+    {
+        value: 'rosa',
+        text: 'Rosa',
+    },
+    {
+        value: 'Blanco',
+        text: 'Blanco',
+    },
+],
+    options: [
+        {
+            value: 'L',
+            text: 'Large',
+
+        },
+        {
+            value: 'M',
+            text: 'Medium',
+
+        },
+        {
+            value: 'S',
+            text: 'Small',
+
+        },
+    ]
+},
+{
+    id: 11,
+    nombre: "Pijama Osito Pand",
+    tipo: "Pijama Osito Panda",
+    precio: 11000,
+    talle: "El mejor Pijama",
+    stock: 7,
+    imgURL: "/imagenes/pijamas/osito-panda.jpeg",
+    category: "pijamas",
+    colores: [
+        {
+        value: 'Gris',
+        text: 'Gris',
+    },
+    {
+        value: 'Negro',
+        text: 'Negro',
+    },
+    {
+        value: 'Blanco',
+        text: 'Blanco',
+    },
+],
+    options: [
+        {
+            value: 'L',
+            text: 'Large',
+
+        },
+        {
+            value: 'M',
+            text: 'Medium',
+
+        },
+        {
+            value: 'S',
+            text: 'Small',
+
+        },
+    ]
+
+},
+
+
+    
+    
 ]

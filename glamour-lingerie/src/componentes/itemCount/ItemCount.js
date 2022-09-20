@@ -1,5 +1,6 @@
 import React from 'react';
-// import { useState } from 'react';
+
+
 
 
 const ItemCount = ({max, contador,setContador, handleAgregar }) => {
@@ -28,7 +29,7 @@ const ItemCount = ({max, contador,setContador, handleAgregar }) => {
             <button onClick={handleSumar} className='btn  btn-primary' >+</button>
             <hr/>
 
-           <button onClick={handleAgregar} className='btn btn-success my-2'>
+           <button onClick={handleAgregar} className='btn btn-success mx-3'>
                 Agregar al carrito
             </button>
          

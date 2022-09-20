@@ -17,7 +17,7 @@ const App = () => {
 
 
   return (
-    // <div className="App"> se puede poner un fragmen con una clase ?
+  
 
     <CartProvider>
 
@@ -30,7 +30,7 @@ const App = () => {
           <Route path='/' element={<ItemListContainer />} />
           <Route path='/data/:categoryId' element={<ItemListContainer />} />
           <Route path='/detail/:itemId' element={<ItemDetailContainer />} />
-          {/* yo tenia la ruta del carrito desde el navbar es necesario que vaya en el app? */}
+          
           <Route path='/cart' element={<Cart />} />
           <Route path='*' element={<Navigate to="" />} />
         </Routes>

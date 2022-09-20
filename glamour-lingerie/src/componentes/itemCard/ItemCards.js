@@ -1,10 +1,8 @@
 import React from "react";
 import { Card, CardBody, CardFooter,  CardText, CardTitle, Button } from "reactstrap";
-// import {useNavigate} from "react-router-dom";
-import { Link } from "react-router-dom"
-// import Item from "../Item/Item";
-// import {Link} from "react-router-dom";
-// import ItemCount from "../itemCount/ItemCount";
+import { Link } from "react-router-dom";
+import './ItemCard.css';
+
 
  
 
@@ -20,17 +18,17 @@ const ItemCard = (props) => {
 
 
     return (
-        <>
+        < >
             <Card
-                className="my-2 "
+                className=" card "
                 style={{
                     width: '18rem',
     
                 }}
             >
                 <img src={imgURL} alt='imagen' />
-                <CardBody>
-                    <CardTitle tag="h5">
+                <CardBody className="contenido"  >
+                    <CardTitle tag="h5" className="h1" >
                         {nombre.id}
                     </CardTitle>
                     <CardText>
@@ -42,8 +40,6 @@ const ItemCard = (props) => {
                     <CardText>
                         {stock}
                     </CardText>
-                  
-                     {/* <ItemCount stock={stock}/> */}
                      
             <Link to={`/detail/${id}`}><Button className='btn  btn-primary' style={{ width: "100%", marginTop: "1rem" }}> Ver Mas</Button> </Link>
                     

@@ -4,6 +4,7 @@ import { getData } from "../../helpers/getData.js";
 import ItemDetail from "../ItemDetail/ItemDetail.js";
 
 
+
 const ItemDetailContainer = () => {
 
     const [item, setItem] = useState([])

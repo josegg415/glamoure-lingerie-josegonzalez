@@ -1,7 +1,6 @@
-
 import {  useState,createContext, useContext } from "react";
 import Swal from "sweetalert2";
-// import { useState } from 'react';
+
 
 
 export const cartContext = createContext()
@@ -34,7 +33,7 @@ export const CartProvider = ({children}) => {
 
     const emptyCart = () => {
       Swal.fire({
-        title: 'Estas Seguro?',
+        title: 'Estas Seguro ?',
         text: "¡No podrás revertir esto!",
         icon: 'warning',
         showCancelButton: true,
