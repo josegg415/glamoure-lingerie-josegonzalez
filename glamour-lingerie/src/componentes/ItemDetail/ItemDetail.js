@@ -1,5 +1,5 @@
 import ItemCount from "../itemCount/ItemCount";
-import Select from "../Select/Select";
+// import Select from "../Select/Select";
 import { useState } from 'react';
  import {  useCartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
@@ -12,12 +12,12 @@ import { Link } from "react-router-dom";
 
 const ItemDetail = ( {item}) => {
 
-    const {cart,addToCart, isInCart } = useCartContext()
-    console.log(cart)
+    const {addToCart, isInCart } = useCartContext()
+    // console.log(cart)
 
     const [cantidad, setCantidad] = useState(1)
-    const [talle, setTalle] = useState(item.options[1].value)
-    const [colores, setColores] = useState(item.colores[1].value)
+    // const [talle, setTalle] = useState(item.options[1].value)
+    // const [colores, setColores] = useState(item.colores[1].value)
 
     const handleAgregar = () => {
         const itemToCart = {
@@ -25,9 +25,9 @@ const ItemDetail = ( {item}) => {
             imgURL: item.imgURL,
             precio: item.precio,
             nombre: item.nombre,
-            talle,
-            cantidad,
-            colores
+            // talle,
+             cantidad
+            // colores
 
 
         }
@@ -51,8 +51,8 @@ const ItemDetail = ( {item}) => {
             <h4  >{item.precio}</h4>
             
           
-            <Select options={item.options}  onSelect={setTalle}/>
-            <Select options={item.colores}  onSelect={setColores}/>
+            {/* <Select options={item.options}  onSelect={setTalle}/>
+            <Select options={item.colores}  onSelect={setColores}/> */}
             
 
             {isInCart(item.id) && <p> El item ya se agrego </p> }
