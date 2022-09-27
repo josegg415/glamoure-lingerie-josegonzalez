@@ -3,7 +3,6 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyBcO6eTvXxQP9JUQi_My8am4q4OasJsOD8",
   authDomain: "glamour-lingerie.firebaseapp.com",

@@ -21,6 +21,8 @@ const Cart = () => {
     )
   }
 
+ 
+
    return (
 
     <div className=' cart'>
@@ -47,6 +49,8 @@ const Cart = () => {
         
                <h4>Total: ${cartTotal()}</h4> 
               <button onClick={emptyCart} className='btn btn-danger btn-sm mx-2'>Vaciar carrito</button>
+              <hr/>
+              <Link  className='btn btn-success btn-sm mx-3' to='/checkout'>Terminar mi Compra</Link>
     </div>
 
 
