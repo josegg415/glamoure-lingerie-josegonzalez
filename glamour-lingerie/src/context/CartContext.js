@@ -56,7 +56,7 @@ export const CartProvider = ({children}) => {
     const terminarCompraConSwal = (id) => {
 
       Swal.fire({
-        title: 'Aprovado!',
+        title: 'Aprobado!',
         text: `Tu numero de orden es: ${id}`,
         icon: 'success',
       

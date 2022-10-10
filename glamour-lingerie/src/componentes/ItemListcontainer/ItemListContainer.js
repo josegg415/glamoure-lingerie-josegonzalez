@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import { getData } from "../../helpers/getData";
 import ItemList from "../ItemLis/ItemList";
 import { collection,  getDocs, query, where } from "firebase/firestore";
 import { db } from '../../firebase/config.js';
+import UncontrolledExample from '../carrucel/Carrucel.js';
 
 
 const ItemListcontainer = () => {
@@ -23,7 +23,7 @@ const ItemListcontainer = () => {
          getDocs(q)
               .then((resp) => {
                 const productosDB = resp.docs.map((doc) => ({id: doc.id, ...doc.data()}))
-                   console.log(productosDB)
+                  
 
                    setData(productosDB)
               })
@@ -36,11 +36,12 @@ const ItemListcontainer = () => {
     return (
 
         <div>
+             <UncontrolledExample/>
 
             {
                  loading ? 
                  <h2>Cargando...</h2>
-                : <ItemList data={data} />
+                :  <ItemList data={data} />
             }
                 
         </div>

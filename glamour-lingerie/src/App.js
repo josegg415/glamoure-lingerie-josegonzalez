@@ -26,6 +26,7 @@ const App = () => {
 
       <BrowserRouter>
         <NavBar />
+        
 
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
